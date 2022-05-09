@@ -210,7 +210,7 @@ def main(username, password, eai_sess):
 if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
-    eai_sess = 'c05hqs6vrpm81dbp29rcrfatl2'  # eai_sess cookie因人而异 获取方法https://www.cc98.org/topic/4969340
+    eai_sess = 'as6aghsrs1ft42jc38bve5h3j7'  # eai_sess cookie因人而异 获取方法https://www.cc98.org/topic/4969340
     
     main(username, password, eai_sess)
 
