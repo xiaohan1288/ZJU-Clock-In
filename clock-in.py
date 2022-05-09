@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 # 打卡脚修改自ZJU-nCov-Hitcarder的开源代码，感谢这位同学开源的代码
+# 感谢 霏霏在此 提供的验证码识别 snippet
+# 感谢 不愿透露姓名的同学
 
 import requests
 import json
