@@ -78,9 +78,6 @@ class ClockIn(object):
 
     def get_captcha(self):
         """Get CAPTCHA code"""
-        #cookie_dict = {'eai-sess': self.eai_sess}
-        #self.sess.cookies = requests.cookies.cookiejar_from_dict(cookie_dict)
-        self.sess.cookies = self.cookies
         resp = self.sess.get(self.CAPTCHA_URL, headers=self.HEADERS)
         captcha = self.ocr.classification(resp.content)
         print("验证码：", captcha)
