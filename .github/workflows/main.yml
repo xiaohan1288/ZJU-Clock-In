@@ -12,7 +12,7 @@ on:
 jobs:
   ClockIn:
     runs-on: ubuntu-latest
-#     if: github.event.repository.owner.id == github.event.sender.id
+    if: github.event.repository.owner.id == github.event.sender.id || github.event_name == 'schedule'
     steps:
       - name: Checkout
         uses: actions/checkout@master
@@ -30,5 +30,3 @@ jobs:
           PASSWORD: ${{ secrets.PASSWORD }}
         run: |
           python3 clock-in.py ${ACCOUNT} ${PASSWORD}
-          
-          
